@@ -8,7 +8,7 @@ permalink: /about/
 
 我叫大象。 是个人。
 
-白天职业写代码，夜里业余打羽毛球。周末有空讲单口喜剧 (暂停)，和朋友[瞎扯](https://xiangyigegeng.club/) (暂停)。
+白天职业写代码，夜里业余搞创作。周末有空讲单口喜剧 (暂停)，和朋友[瞎扯](https://xiangyigegeng.club/) (暂停)。
 
 2026 的关键词是 Selection：我们如何塑造河道，又如何被河道塑造。
 
