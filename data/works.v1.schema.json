@@ -13,6 +13,21 @@
   },
   "additionalProperties": false,
   "$defs": {
+    "localizedWork": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "type": { "type": "string" },
+        "one_liner": { "type": "string" },
+        "description": { "type": "string" },
+        "cover_alt": { "type": "string" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
     "work": {
       "type": "object",
       "required": ["id", "title", "year", "one_liner"],
@@ -21,10 +36,12 @@
         "title": { "type": "string", "minLength": 1 },
         "year": { "type": ["integer", "string"] },
         "type": { "type": "string" },
+        "category": { "type": "string" },
         "one_liner": { "type": "string" },
         "description": { "type": "string" },
         "cover": { "type": "string" },
         "cover_alt": { "type": "string" },
+        "cover_fit": { "enum": ["cover", "contain"] },
         "cover_position": { "type": "string" },
         "aspect_ratio": { "type": "string" },
         "tags": {
@@ -34,6 +51,10 @@
         "links": {
           "type": "object",
           "additionalProperties": { "type": "string" }
+        },
+        "i18n": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/localizedWork" }
         },
         "featured": { "type": "boolean" },
         "status": { "type": "string" },
