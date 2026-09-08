@@ -15,11 +15,19 @@ permalink: /works/
 <body>
   <main class="works-shell">
     <header class="works-header">
-      <h1>Works</h1>
-      <span id="works-count" class="works-count" aria-live="polite">—</span>
+      <div class="works-heading">
+        <h1 id="page-title">Works</h1>
+        <span id="works-count" class="works-count" aria-live="polite">—</span>
+      </div>
+
+      <div id="language-toggle" class="language-toggle" role="group" aria-label="Language">
+        <button class="language-option" type="button" data-locale="zh" aria-pressed="false">中文</button>
+        <span class="language-divider" aria-hidden="true">/</span>
+        <button class="language-option" type="button" data-locale="en" aria-pressed="true">EN</button>
+      </div>
     </header>
 
-    <p class="works-intro"><button id="profile-trigger" class="profile-trigger" type="button" aria-controls="work-drawer" aria-expanded="false" aria-label="Open Will's profile">Will <span aria-hidden="true">→</span></button> — a builder exploring the interface between human thought and AI, asking: what remains constant as everything changes?</p>
+    <p id="works-intro" class="works-intro"><button id="profile-trigger" class="profile-trigger" type="button" aria-controls="work-drawer" aria-expanded="false" aria-label="Open Will's profile">Will <span aria-hidden="true">→</span></button> — a builder exploring the interface between human thought and AI, asking: what remains constant as everything changes?</p>
 
     <nav id="works-filters" class="works-filters" aria-label="Filter works by type"></nav>
 
