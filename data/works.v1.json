@@ -1,0 +1,115 @@
+{
+  "schema": "works.v1",
+  "items": [
+    {
+      "id": "good-things",
+      "title": "Good Things",
+      "year": 2026,
+      "type": "Product · AI",
+      "one_liner": "Tinder for opportunities.",
+      "description": "An AI-native opportunity system designed to compress discovery, decision, and action into one low-friction flow.",
+      "cover": "https://opengraph.githubassets.com/works-v0/willwangcc/goodthings-prototype",
+      "cover_alt": "Good Things project",
+      "aspect_ratio": "4 / 3",
+      "tags": ["Opportunity", "Agents", "Product"],
+      "links": {
+        "live": "https://goodthings-prototype.vercel.app/",
+        "github": "https://github.com/willwangcc/goodthings-prototype"
+      },
+      "featured": true,
+      "status": "active",
+      "order": 10
+    },
+    {
+      "id": "sense-commons",
+      "title": "Sense Commons",
+      "year": 2026,
+      "type": "Protocol · Knowledge",
+      "one_liner": "A public protocol for reusable understanding.",
+      "description": "A protocol and system for materializing sources, generating structured artifacts, and making concepts reusable across tools and contexts.",
+      "cover": "https://opengraph.githubassets.com/works-v0/willwangcc/sense-commons",
+      "cover_alt": "Sense Commons project",
+      "aspect_ratio": "4 / 3",
+      "tags": ["Protocol", "Knowledge", "AI"],
+      "links": {
+        "github": "https://github.com/willwangcc/sense-commons"
+      },
+      "featured": true,
+      "status": "active",
+      "order": 20
+    },
+    {
+      "id": "daymap",
+      "title": "Daymap",
+      "year": 2026,
+      "type": "Personal system · Data",
+      "one_liner": "A map of lived time.",
+      "description": "A personal data system that reconciles multiple daily sources into a navigable record of what happened, what mattered, and what changed.",
+      "cover": "https://opengraph.githubassets.com/works-v0/willwangcc/daymap",
+      "cover_alt": "Daymap project",
+      "aspect_ratio": "4 / 3",
+      "tags": ["Personal data", "Visualization", "Automation"],
+      "links": {
+        "github": "https://github.com/willwangcc/daymap"
+      },
+      "featured": true,
+      "status": "active",
+      "order": 30
+    },
+    {
+      "id": "cool-foodie",
+      "title": "Cool Foodie",
+      "year": 2026,
+      "type": "Food · Protocol",
+      "one_liner": "Food understanding as executable data.",
+      "description": "A food-understanding repository organized around entities, ADPs, artifacts, and apps — from packaged-food identity to ingredient and nutrition explanations.",
+      "cover": "https://opengraph.githubassets.com/works-v0/willwangcc/cool-foodie",
+      "cover_alt": "Cool Foodie project",
+      "aspect_ratio": "4 / 3",
+      "tags": ["Food", "Data", "Protocol"],
+      "links": {
+        "github": "https://github.com/willwangcc/cool-foodie"
+      },
+      "featured": true,
+      "status": "active",
+      "order": 40
+    },
+    {
+      "id": "trace",
+      "title": "TRACE",
+      "year": 2026,
+      "type": "Interactive · Web",
+      "one_liner": "An interactive spatial narrative experiment.",
+      "description": "A web experiment exploring how motion, space, and fragments of story can turn a page into a navigable narrative environment.",
+      "cover": "https://opengraph.githubassets.com/works-v0/willwangcc/TRACE",
+      "cover_alt": "TRACE project",
+      "aspect_ratio": "4 / 3",
+      "tags": ["Interaction", "Narrative", "Web"],
+      "links": {
+        "github": "https://github.com/willwangcc/TRACE"
+      },
+      "featured": true,
+      "status": "experiment",
+      "order": 50
+    },
+    {
+      "id": "visual-dna",
+      "title": "Visual DNA",
+      "year": 2026,
+      "type": "Design system · Tool",
+      "one_liner": "Reusable visual languages, stored as data.",
+      "description": "A data-decoupled system for defining visual DNA and rendering it through lightweight viewers instead of hard-coding a style into one app.",
+      "cover": "https://opengraph.githubassets.com/works-v0/willwangcc/visual-dna",
+      "cover_alt": "Visual DNA project",
+      "aspect_ratio": "4 / 3",
+      "tags": ["Design", "Visual systems", "Data"],
+      "links": {
+        "live": "https://visual-dna-dnas-viewer.vercel.app/",
+        "github": "https://github.com/willwangcc/visual-dna"
+      },
+      "featured": true,
+      "status": "active",
+      "order": 60
+    }
+  ]
+}
