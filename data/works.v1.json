@@ -114,19 +114,19 @@
     {
       "id": "physical-base",
       "title": "物理基地",
-      "year": 2026,
-      "type": "Physical space · Project",
-      "one_liner": "一个真实世界里的物理基地。",
-      "description": "A physical-space project documented through this video.",
+      "year": 2024,
+      "type": "Living system · Video",
+      "one_liner": "How to rebuild a portable home base anywhere in one day.",
+      "description": "An early base8.life video essay about designing an eight-square-meter portable living base for nomadic life: modular storage, sensory and functional design, daily-use patterns, and a packable sleep system that make a familiar home easier to rebuild in a new place.",
       "cover": "https://i.ytimg.com/vi/aj0cN6cMaZM/hqdefault.jpg",
-      "cover_alt": "物理基地",
+      "cover_alt": "物理基地 portable base video",
       "aspect_ratio": "16 / 9",
-      "tags": ["Physical space", "Project", "Video"],
+      "tags": ["Portable living", "Space design", "Digital nomad", "Video"],
       "links": {
         "source": "https://www.youtube.com/watch?v=aj0cN6cMaZM"
       },
       "featured": true,
-      "status": "active",
+      "status": "archived",
       "order": 70
     }
   ]
