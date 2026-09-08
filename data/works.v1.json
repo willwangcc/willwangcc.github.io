@@ -47,8 +47,8 @@
       "type": "Product · AI",
       "one_liner": "Tinder for opportunities.",
       "description": "An AI-native opportunity system designed to compress discovery, decision, and action into one low-friction flow.",
-      "cover": "https://opengraph.githubassets.com/works-v0/willwangcc/goodthings-prototype",
-      "cover_alt": "Good Things project",
+      "cover": "/assets/works/good-things.webp",
+      "cover_alt": "Good Things opportunity discovery app",
       "aspect_ratio": "4 / 3",
       "tags": ["Opportunity", "Agents", "Product"],
       "links": {
