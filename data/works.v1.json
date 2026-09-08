@@ -19,6 +19,24 @@
         "about": "https://willwangcc.github.io/about/",
         "inspiration": "https://www.youtube.com/watch?v=sqD29TKWOqE&ab_channel=%E9%A3%8E%E7%9B%B4%E6%92%AD"
       },
+      "i18n": {
+        "zh": {
+          "title": "葬礼 2063",
+          "type": "一生作品 · 持续进行中",
+          "one_liner": "制作周期较长，首映礼暂定 2063 年。",
+          "description": "一直在筹办自己的葬礼。欢迎 2063 年来参加。我是一个内向且……礼貌的人，所以葬礼可能是唯一一个场合：每个人都在和我交流，而我又不用社交。所以，我得好好筹划，不能搞砸我人生最喜欢、也最重要的时刻。毕竟我不能亲自到场，活着。",
+          "cover_alt": "葬礼 2063 首映礼票",
+          "tags": ["一生作品", "Lifetime", "持续进行中"]
+        },
+        "en": {
+          "title": "Funeral 2063",
+          "type": "Life work · Ongoing",
+          "one_liner": "A long production. Premiere tentatively scheduled for 2063.",
+          "description": "I have been planning my own funeral for a while. You are invited in 2063. I am introverted and… polite, so a funeral may be the only occasion where everyone is talking to me and I do not have to socialize. I should plan it well. It would be a shame to ruin my favorite — and most important — moment of my life. After all, I will not be able to attend in person. Alive.",
+          "cover_alt": "Funeral 2063 final screening ticket",
+          "tags": ["Life work", "Lifetime", "Ongoing"]
+        }
+      },
       "featured": true,
       "status": "active",
       "order": 0
@@ -29,8 +47,8 @@
       "year": 2026,
       "type": "Spiritual base · Book",
       "category": "Book",
-      "one_liner": "A spiritual base for meeting change without rebuilding yourself from zero.",
-      "description": "Tree of Life is my spiritual base: a meta mental model for keeping meaning, judgment, and direction coherent as reality changes. Rather than offering fixed answers, it gives me a stable structure for understanding reality, forming judgment, and choosing action. Its working grammar is 愿·悟·道·法·术·器·例·场·运·势. The manuscript is still under revision and has not yet been formally published; if it resonates, feel free to email me.",
+      "one_liner": "Find what should not change, so everything else can.",
+      "description": "Tree of Life is my spiritual base and an ongoing experiment in one question: how should a finite person live in a world that never stops changing?",
       "cover": "/assets/works/tree-of-life.webp",
       "cover_alt": "生命之树 green book cover",
       "cover_fit": "contain",
@@ -38,6 +56,24 @@
       "tags": ["Spiritual base", "Mental models", "Book"],
       "links": {
         "email": "mailto:willwangcc@gmail.com?subject=Tree%20of%20Life"
+      },
+      "i18n": {
+        "zh": {
+          "title": "生命之树",
+          "type": "精神基地 · 书",
+          "one_liner": "找出不该变的，才知道其余一切该怎么变。",
+          "description": "《生命之树》是我的精神基地，也是一个持续进行的人生实验：在一个不断变化、充满偶然、无法完全控制的世界里，一个有限的人，如何找到不变之物，并据此理解、判断、行动，再让现实不断修正自己。它以「愿、悟、道、法、术、器、例、场、运、势」为十个根，连接从“什么值得发生”，到“如何看见真实”，再到判断、行动、反馈，以及我们无法逃离的环境、运气与趋势。另一个我常用的问法是：如何让幸福不只靠运气？不是消灭运气，而是让自己更能识别现实、做出判断、采取行动、从后果中学习，也给好运留下可以落地的接口。目前仍在持续修订，尚未正式出版；感兴趣可以邮件联系我。",
+          "cover_alt": "《生命之树》绿色书籍封面",
+          "tags": ["精神基地", "心智模型", "书"]
+        },
+        "en": {
+          "title": "Tree of Life",
+          "type": "Spiritual base · Book",
+          "one_liner": "Find what should not change, so everything else can.",
+          "description": "Tree of Life is my spiritual base and an ongoing attempt to answer one question: how should a finite person live in a world that never stops changing? Its ten roots — 愿, 悟, 道, 法, 术, 器, 例, 场, 运, 势 — connect what is worth pursuing with reality, judgment, action, feedback, circumstance, chance, and momentum. Another way I ask the same question is: how can happiness depend less on luck? Not by eliminating luck, but by becoming better able to recognize reality, make sound judgments, act, learn from consequences, choose better environments, and give good fortune somewhere to land. The manuscript is still under revision and has not yet been formally published; if it resonates, feel free to email me.",
+          "cover_alt": "Tree of Life green book cover",
+          "tags": ["Spiritual base", "Mental models", "Book"]
+        }
       },
       "featured": true,
       "status": "in revision",
@@ -59,6 +95,24 @@
         "live": "https://goodthings-prototype.vercel.app/",
         "github": "https://github.com/willwangcc/goodthings-prototype"
       },
+      "i18n": {
+        "zh": {
+          "title": "Good Things",
+          "type": "产品 · AI",
+          "one_liner": "像 Tinder 一样发现机会。",
+          "description": "一个 AI 原生的机会系统，把发现、判断和行动压缩进一条低摩擦路径，让好机会不再只靠运气。",
+          "cover_alt": "Good Things 机会发现应用",
+          "tags": ["机会", "Agent", "产品"]
+        },
+        "en": {
+          "title": "Good Things",
+          "type": "Product · AI",
+          "one_liner": "Tinder for opportunities.",
+          "description": "An AI-native opportunity system designed to compress discovery, decision, and action into one low-friction flow.",
+          "cover_alt": "Good Things opportunity discovery app",
+          "tags": ["Opportunity", "Agents", "Product"]
+        }
+      },
       "featured": true,
       "status": "active",
       "order": 10
@@ -77,6 +131,24 @@
       "tags": ["Protocol", "Knowledge", "AI"],
       "links": {
         "github": "https://github.com/willwangcc/sense-commons"
+      },
+      "i18n": {
+        "zh": {
+          "title": "Sense Commons",
+          "type": "协议 · 知识",
+          "one_liner": "让理解可复用的公共协议。",
+          "description": "一套用于理解世界的协议与系统：把来源物化、生成结构化 artifacts，并让概念能够跨工具、跨情境复用。",
+          "cover_alt": "Sense Commons 世界理解引擎",
+          "tags": ["协议", "知识", "AI"]
+        },
+        "en": {
+          "title": "Sense Commons",
+          "type": "Protocol · Knowledge",
+          "one_liner": "A public protocol for reusable understanding.",
+          "description": "A protocol and system for materializing sources, generating structured artifacts, and making concepts reusable across tools and contexts.",
+          "cover_alt": "Sense Commons world understanding engine",
+          "tags": ["Protocol", "Knowledge", "AI"]
+        }
       },
       "featured": true,
       "status": "active",
@@ -97,6 +169,24 @@
       "links": {
         "source": "https://www.youtube.com/watch?v=aj0cN6cMaZM"
       },
+      "i18n": {
+        "zh": {
+          "title": "宇宙基地",
+          "type": "生活系统 · 视频",
+          "one_liner": "一天之内，可以在任何地方重新搭起的家。",
+          "description": "一支早期的 base8.life 视频：为游牧式生活设计一个八平方米的可携带基地。模块化收纳、感官与功能设计、日常使用路径，以及可打包的睡眠系统，让熟悉的生活能在新的地方快速重建。",
+          "cover_alt": "宇宙基地可携带生活空间",
+          "tags": ["可携带生活", "空间设计", "数字游民", "视频"]
+        },
+        "en": {
+          "title": "Cosmic Base",
+          "type": "Living system · Video",
+          "one_liner": "A portable base you can rebuild anywhere in one day.",
+          "description": "An early base8.life video essay about designing an eight-square-meter portable living base for nomadic life: modular storage, sensory and functional design, daily-use patterns, and a packable sleep system that make a familiar home easier to rebuild in a new place.",
+          "cover_alt": "Cosmic Base portable living space",
+          "tags": ["Portable living", "Space design", "Digital nomad", "Video"]
+        }
+      },
       "featured": true,
       "status": "archived",
       "order": 70
@@ -115,6 +205,24 @@
       "tags": ["Game", "Tower defense", "FPS", "VR", "USC", "Team project"],
       "links": {
         "source": "https://www.youtube.com/watch?v=mMH2pkbBRtk"
+      },
+      "i18n": {
+        "zh": {
+          "title": "Not Today",
+          "type": "游戏 · VR · USC",
+          "one_liner": "非对称塔防遇上第一人称战斗。",
+          "description": "一个在 USC 完成的团队游戏项目，围绕非对称的双边对抗展开：一名玩家以第一人称进入世界并推进地图，另一名玩家从塔防视角控制战场，随后双方角色可以互换。项目把 FPS、塔防策略、立体 3D 与 VR 组合进一个竞技游戏原型。",
+          "cover_alt": "Not Today USC 游戏原型",
+          "tags": ["游戏", "塔防", "FPS", "VR", "USC", "团队项目"]
+        },
+        "en": {
+          "title": "Not Today",
+          "type": "Game · VR · USC",
+          "one_liner": "Asymmetric tower defense meets first-person combat.",
+          "description": "A team game project built at USC around an asymmetric two-sided battle. One player enters the world in first-person and pushes through the map, while the opposing player controls the battlefield from a tower-defense view; the roles can then reverse. The project combined first-person shooting, tower-defense strategy, stereoscopic 3D, and VR into one competitive game prototype.",
+          "cover_alt": "Not Today USC game prototype",
+          "tags": ["Game", "Tower defense", "FPS", "VR", "USC", "Team project"]
+        }
       },
       "featured": true,
       "status": "archived",
