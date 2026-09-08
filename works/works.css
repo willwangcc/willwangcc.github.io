@@ -35,7 +35,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .works-header h1 {
@@ -50,6 +50,44 @@ button, a { -webkit-tap-highlight-color: transparent; }
   color: var(--muted);
   font-size: 12px;
   font-variant-numeric: tabular-nums;
+}
+
+.works-filters {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding: 1px 0;
+  scrollbar-width: none;
+}
+
+.works-filters::-webkit-scrollbar { display: none; }
+
+.works-filter {
+  flex: 0 0 auto;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: #595959;
+  cursor: pointer;
+  font: inherit;
+  font-size: 11px;
+  line-height: 1;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.works-filter:hover { border-color: rgba(23, 23, 23, 0.28); color: var(--ink); }
+
+.works-filter.is-active {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: white;
+}
+
+.works-filter:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 2px;
 }
 
 .works-grid {

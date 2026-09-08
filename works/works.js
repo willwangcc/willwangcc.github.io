@@ -2,13 +2,17 @@
   const DATA_URL = "/data/works.v1.json";
   const grid = document.getElementById("works-grid");
   const count = document.getElementById("works-count");
+  const filters = document.getElementById("works-filters");
   const drawer = document.getElementById("work-drawer");
   const drawerContent = document.getElementById("drawer-content");
   const closeButton = document.getElementById("drawer-close");
   const backdrop = document.getElementById("drawer-backdrop");
 
   let works = [];
+  let activeCategory = "all";
   let lastFocused = null;
+
+  const categoryOrder = ["Film", "Book", "App", "Knowledge System", "Video", "Game"];
 
   const escapeHtml = (value = "") => String(value)
     .replaceAll("&", "&amp;")
@@ -23,6 +27,37 @@
     case_study: "Case study",
     source: "Source"
   }[key] || key.replaceAll("_", " ").replace(/\b\w/g, c => c.toUpperCase()));
+
+  function visibleWorks() {
+    return activeCategory === "all"
+      ? works
+      : works.filter(item => item.category === activeCategory);
+  }
+
+  function renderFilters() {
+    filters.innerHTML = "";
+    const categories = categoryOrder.filter(category => works.some(item => item.category === category));
+    const options = [
+      { id: "all", label: `All (${works.length})` },
+      ...categories.map(category => ({ id: category, label: category }))
+    ];
+
+    options.forEach(({ id, label }) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "works-filter";
+      button.textContent = label;
+      button.setAttribute("aria-pressed", String(activeCategory === id));
+      if (activeCategory === id) button.classList.add("is-active");
+      button.addEventListener("click", () => {
+        if (activeCategory === id) return;
+        activeCategory = id;
+        renderFilters();
+        renderGrid(visibleWorks());
+      });
+      filters.appendChild(button);
+    });
+  }
 
   function renderGrid(items) {
     grid.innerHTML = "";
@@ -158,7 +193,8 @@
         .filter(item => item && item.id && item.title && item.featured !== false && item.status !== "hidden")
         .sort((a, b) => (a.order ?? 9999) - (b.order ?? 9999));
 
-      renderGrid(works);
+      renderFilters();
+      renderGrid(visibleWorks());
       syncFromUrl();
     })
     .catch((error) => {
