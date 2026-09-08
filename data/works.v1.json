@@ -110,6 +110,24 @@
       "featured": true,
       "status": "active",
       "order": 60
+    },
+    {
+      "id": "physical-base",
+      "title": "物理基地",
+      "year": 2026,
+      "type": "Physical space · Project",
+      "one_liner": "一个真实世界里的物理基地。",
+      "description": "A physical-space project documented through this video.",
+      "cover": "https://i.ytimg.com/vi/aj0cN6cMaZM/hqdefault.jpg",
+      "cover_alt": "物理基地",
+      "aspect_ratio": "16 / 9",
+      "tags": ["Physical space", "Project", "Video"],
+      "links": {
+        "source": "https://www.youtube.com/watch?v=aj0cN6cMaZM"
+      },
+      "featured": true,
+      "status": "active",
+      "order": 70
     }
   ]
 }
