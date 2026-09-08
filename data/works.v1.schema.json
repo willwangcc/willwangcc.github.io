@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://willwangcc.github.io/data/works.v1.schema.json",
+  "title": "Works manifest v1",
+  "type": "object",
+  "required": ["schema", "items"],
+  "properties": {
+    "schema": { "const": "works.v1" },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/work" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "work": {
+      "type": "object",
+      "required": ["id", "title", "year", "one_liner"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "year": { "type": ["integer", "string"] },
+        "type": { "type": "string" },
+        "one_liner": { "type": "string" },
+        "description": { "type": "string" },
+        "cover": { "type": "string" },
+        "cover_alt": { "type": "string" },
+        "cover_position": { "type": "string" },
+        "aspect_ratio": { "type": "string" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "links": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "featured": { "type": "boolean" },
+        "status": { "type": "string" },
+        "order": { "type": "number" }
+      },
+      "additionalProperties": true
+    }
+  }
+}
