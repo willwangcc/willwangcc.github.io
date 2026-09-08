@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">生命之树 · Tree of Life</title>
+  <desc id="desc">A green hardcover book shown at a subtle three-quarter angle with the title 生命之树 and a tree-like network symbol.</desc>
+  <defs>
+    <linearGradient id="front" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#31d99a"/>
+      <stop offset="0.55" stop-color="#12c77d"/>
+      <stop offset="1" stop-color="#08b86f"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#078f57"/>
+      <stop offset="1" stop-color="#17bb75"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <path d="M337 126 L406 92 L406 808 L337 778 Z" fill="url(#spine)"/>
+    <path d="M406 92 L843 121 L843 784 L406 808 Z" fill="url(#front)"/>
+    <path d="M406 92 L843 121 L835 130 L414 105 Z" fill="#eaf8f1" opacity="0.88"/>
+    <path d="M406 808 L843 784 L835 777 L414 796 Z" fill="#0aa866" opacity="0.7"/>
+
+    <g fill="#fff" font-family="'Songti SC','Noto Serif CJK SC','STSong','SimSun',serif">
+      <text x="624" y="286" text-anchor="middle" font-size="76" font-weight="600">生命之树</text>
+      <text x="624" y="353" text-anchor="middle" font-size="31">如何以不变应万变？</text>
+    </g>
+
+    <g fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="624" cy="572" r="176"/>
+      <path d="M624 690 V498 M624 553 L572 512 M624 553 L677 509 M624 611 L565 575 M624 611 L683 573"/>
+      <circle cx="624" cy="471" r="30" fill="none"/>
+      <circle cx="557" cy="495" r="30" fill="none"/>
+      <circle cx="691" cy="492" r="30" fill="none"/>
+      <circle cx="548" cy="564" r="30" fill="none"/>
+      <circle cx="699" cy="561" r="30" fill="none"/>
+    </g>
+
+    <g fill="#fff" font-family="'Songti SC','Noto Serif CJK SC','STSong','SimSun',serif">
+      <text x="373" y="231" text-anchor="middle" font-size="34" transform="rotate(4 373 231)">生</text>
+      <text x="372" y="276" text-anchor="middle" font-size="34" transform="rotate(4 372 276)">命</text>
+      <text x="370" y="321" text-anchor="middle" font-size="34" transform="rotate(4 370 321)">之</text>
+      <text x="369" y="366" text-anchor="middle" font-size="34" transform="rotate(4 369 366)">树</text>
+    </g>
+
+    <g transform="translate(368 681) scale(.35)" fill="none" stroke="#fff" stroke-width="7">
+      <circle cx="0" cy="0" r="58"/>
+      <path d="M0 42 V-28 M0 -4 L-24 -20 M0 -4 L24 -20 M0 20 L-26 6 M0 20 L26 6"/>
+      <circle cx="0" cy="-38" r="10"/>
+      <circle cx="-31" cy="-24" r="10"/>
+      <circle cx="31" cy="-24" r="10"/>
+      <circle cx="-34" cy="7" r="10"/>
+      <circle cx="34" cy="7" r="10"/>
+    </g>
+  </g>
+</svg>
