@@ -128,6 +128,24 @@
       "featured": true,
       "status": "archived",
       "order": 70
+    },
+    {
+      "id": "not-today",
+      "title": "Not Today",
+      "year": 2018,
+      "type": "Game · VR · USC",
+      "one_liner": "Asymmetric tower defense meets first-person combat.",
+      "description": "A team game project built at USC around an asymmetric two-sided battle. One player enters the world in first-person and pushes through the map, while the opposing player controls the battlefield from a tower-defense view; the roles can then reverse. The project combined first-person shooting, tower-defense strategy, stereoscopic 3D, and VR into one competitive game prototype.",
+      "cover": "https://i.ytimg.com/vi/mMH2pkbBRtk/hqdefault.jpg",
+      "cover_alt": "Not Today USC game prototype",
+      "aspect_ratio": "4 / 3",
+      "tags": ["Game", "Tower defense", "FPS", "VR", "USC", "Team project"],
+      "links": {
+        "source": "https://www.youtube.com/watch?v=mMH2pkbBRtk"
+      },
+      "featured": true,
+      "status": "archived",
+      "order": 80
     }
   ]
 }
