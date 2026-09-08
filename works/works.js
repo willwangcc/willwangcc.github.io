@@ -46,6 +46,7 @@
       img.alt = item.cover_alt || item.title || "Work cover";
       img.loading = "lazy";
       img.decoding = "async";
+      if (["cover", "contain"].includes(item.cover_fit)) img.style.objectFit = item.cover_fit;
       if (item.cover_position) img.style.objectPosition = item.cover_position;
 
       const fallback = document.createElement("span");
