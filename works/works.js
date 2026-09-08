@@ -3,6 +3,7 @@
   const grid = document.getElementById("works-grid");
   const count = document.getElementById("works-count");
   const filters = document.getElementById("works-filters");
+  const profileTrigger = document.getElementById("profile-trigger");
   const drawer = document.getElementById("work-drawer");
   const drawerContent = document.getElementById("drawer-content");
   const closeButton = document.getElementById("drawer-close");
@@ -13,6 +14,16 @@
   let lastFocused = null;
 
   const categoryOrder = ["Film", "Book", "App", "Knowledge System", "Video", "Game"];
+  const profile = {
+    name: "Will Wang",
+    avatar: "https://i.imgur.com/OJjTJOt.jpg",
+    description: "A builder exploring the interface between human thought and AI.",
+    links: {
+      LinkedIn: "https://www.linkedin.com/in/zhixiangwang/",
+      Bilibili: "https://space.bilibili.com/8464298",
+      YouTube: "https://www.youtube.com/@GrittyGuide"
+    }
+  };
 
   const escapeHtml = (value = "") => String(value)
     .replaceAll("&", "&amp;")
@@ -121,23 +132,45 @@
     `;
   }
 
-  function openDrawer(item, updateUrl = false) {
-    if (!item) return;
+  function profileMarkup() {
+    const links = Object.entries(profile.links)
+      .map(([label, url]) => `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} ↗</a>`)
+      .join("");
 
+    return `
+      <div class="profile-heading">
+        <img class="profile-avatar" src="${escapeHtml(profile.avatar)}" alt="${escapeHtml(profile.name)}">
+        <div>
+          <div class="drawer-eyebrow">Profile</div>
+          <h2 id="drawer-title" class="drawer-title">${escapeHtml(profile.name)}</h2>
+        </div>
+      </div>
+      <p class="drawer-one-liner">${escapeHtml(profile.description)}</p>
+      <div class="drawer-links profile-links">${links}</div>
+    `;
+  }
+
+  function openDrawerMarkup(markup, updateUrl, hash) {
     lastFocused = document.activeElement;
-    drawerContent.innerHTML = drawerMarkup(item);
+    drawerContent.innerHTML = markup;
     drawer.classList.add("is-open");
     drawer.setAttribute("aria-hidden", "false");
+    profileTrigger.setAttribute("aria-expanded", String(hash === "#about"));
     backdrop.hidden = false;
     requestAnimationFrame(() => backdrop.classList.add("is-open"));
     document.body.classList.add("drawer-open");
 
-    if (updateUrl) {
-      const hash = `#work=${encodeURIComponent(item.id)}`;
-      if (location.hash !== hash) history.pushState({ work: item.id }, "", hash);
-    }
-
+    if (updateUrl && location.hash !== hash) history.pushState({ drawer: hash }, "", hash);
     closeButton.focus({ preventScroll: true });
+  }
+
+  function openDrawer(item, updateUrl = false) {
+    if (!item) return;
+    openDrawerMarkup(drawerMarkup(item), updateUrl, `#work=${encodeURIComponent(item.id)}`);
+  }
+
+  function openProfile(updateUrl = false) {
+    openDrawerMarkup(profileMarkup(), updateUrl, "#about");
   }
 
   function closeDrawer(updateUrl = false) {
@@ -145,6 +178,7 @@
 
     drawer.classList.remove("is-open");
     drawer.setAttribute("aria-hidden", "true");
+    profileTrigger.setAttribute("aria-expanded", "false");
     backdrop.classList.remove("is-open");
     document.body.classList.remove("drawer-open");
 
@@ -152,7 +186,7 @@
       if (!drawer.classList.contains("is-open")) backdrop.hidden = true;
     }, 220);
 
-    if (updateUrl && location.hash.startsWith("#work=")) {
+    if (updateUrl && (location.hash.startsWith("#work=") || location.hash === "#about")) {
       history.replaceState(null, "", location.pathname + location.search);
     }
 
@@ -162,6 +196,11 @@
   }
 
   function syncFromUrl() {
+    if (location.hash === "#about") {
+      openProfile(false);
+      return;
+    }
+
     if (!location.hash.startsWith("#work=")) {
       closeDrawer(false);
       return;
@@ -174,6 +213,7 @@
 
   closeButton.addEventListener("click", () => closeDrawer(true));
   backdrop.addEventListener("click", () => closeDrawer(true));
+  profileTrigger.addEventListener("click", () => openProfile(true));
   window.addEventListener("popstate", syncFromUrl);
   window.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeDrawer(true);

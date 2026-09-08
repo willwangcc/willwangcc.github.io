@@ -61,6 +61,35 @@ button, a { -webkit-tap-highlight-color: transparent; }
   letter-spacing: -0.01em;
 }
 
+.profile-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  line-height: inherit;
+}
+
+.profile-trigger:hover { color: #555; }
+
+.profile-trigger:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 3px;
+}
+
+.profile-trigger img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .works-filters {
   display: flex;
   gap: 7px;
@@ -235,6 +264,26 @@ button, a { -webkit-tap-highlight-color: transparent; }
   letter-spacing: -0.055em;
   font-weight: 650;
 }
+
+.profile-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.profile-heading .drawer-eyebrow { margin-bottom: 7px; }
+.profile-heading .drawer-title { font-size: clamp(28px, 3.5vw, 40px); }
+
+.profile-avatar {
+  width: 76px;
+  height: 76px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ececea;
+}
+
+.profile-links { margin-top: 36px; }
 
 .drawer-one-liner {
   margin: 18px 0 0;
