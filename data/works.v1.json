@@ -8,8 +8,9 @@
       "type": "Life work · Ongoing",
       "one_liner": "制作周期较长，首映礼暂定 2063 年。",
       "description": "一直在筹办自己的葬礼。欢迎 2063 年来参加。我是一个内向且……礼貌的人，所以葬礼可能是唯一一个场合：每个人都在和我交流，而我又不用社交。所以，我得好好筹划，不能搞砸我人生最喜欢、也最重要的时刻。毕竟我不能亲自到场，活着。",
-      "cover": "",
-      "cover_alt": "葬礼 2063 cover placeholder",
+      "cover": "/assets/works/funeral-2063.webp",
+      "cover_alt": "葬礼 2063 final screening ticket",
+      "cover_fit": "contain",
       "aspect_ratio": "4 / 3",
       "tags": ["Life work", "Lifetime", "Ongoing"],
       "links": {
@@ -76,79 +77,6 @@
       "featured": true,
       "status": "active",
       "order": 20
-    },
-    {
-      "id": "daymap",
-      "title": "Daymap",
-      "year": 2026,
-      "type": "Personal system · Data",
-      "one_liner": "A map of lived time.",
-      "description": "A personal data system that reconciles multiple daily sources into a navigable record of what happened, what mattered, and what changed.",
-      "cover": "https://opengraph.githubassets.com/works-v0/willwangcc/daymap",
-      "cover_alt": "Daymap project",
-      "aspect_ratio": "4 / 3",
-      "tags": ["Personal data", "Visualization", "Automation"],
-      "links": {
-        "github": "https://github.com/willwangcc/daymap"
-      },
-      "featured": true,
-      "status": "active",
-      "order": 30
-    },
-    {
-      "id": "cool-foodie",
-      "title": "Cool Foodie",
-      "year": 2026,
-      "type": "Food · Protocol",
-      "one_liner": "Food understanding as executable data.",
-      "description": "A food-understanding repository organized around entities, ADPs, artifacts, and apps — from packaged-food identity to ingredient and nutrition explanations.",
-      "cover": "https://opengraph.githubassets.com/works-v0/willwangcc/cool-foodie",
-      "cover_alt": "Cool Foodie project",
-      "aspect_ratio": "4 / 3",
-      "tags": ["Food", "Data", "Protocol"],
-      "links": {
-        "github": "https://github.com/willwangcc/cool-foodie"
-      },
-      "featured": true,
-      "status": "active",
-      "order": 40
-    },
-    {
-      "id": "trace",
-      "title": "TRACE",
-      "year": 2026,
-      "type": "Interactive · Web",
-      "one_liner": "An interactive spatial narrative experiment.",
-      "description": "A web experiment exploring how motion, space, and fragments of story can turn a page into a navigable narrative environment.",
-      "cover": "https://opengraph.githubassets.com/works-v0/willwangcc/TRACE",
-      "cover_alt": "TRACE project",
-      "aspect_ratio": "4 / 3",
-      "tags": ["Interaction", "Narrative", "Web"],
-      "links": {
-        "github": "https://github.com/willwangcc/TRACE"
-      },
-      "featured": true,
-      "status": "experiment",
-      "order": 50
-    },
-    {
-      "id": "visual-dna",
-      "title": "Visual DNA",
-      "year": 2026,
-      "type": "Design system · Tool",
-      "one_liner": "Reusable visual languages, stored as data.",
-      "description": "A data-decoupled system for defining visual DNA and rendering it through lightweight viewers instead of hard-coding a style into one app.",
-      "cover": "https://opengraph.githubassets.com/works-v0/willwangcc/visual-dna",
-      "cover_alt": "Visual DNA project",
-      "aspect_ratio": "4 / 3",
-      "tags": ["Design", "Visual systems", "Data"],
-      "links": {
-        "live": "https://visual-dna-dnas-viewer.vercel.app/",
-        "github": "https://github.com/willwangcc/visual-dna"
-      },
-      "featured": true,
-      "status": "active",
-      "order": 60
     },
     {
       "id": "physical-base",
