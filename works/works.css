@@ -83,13 +83,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   outline-offset: 3px;
 }
 
-.profile-trigger img {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 .works-filters {
   display: flex;
   gap: 7px;
