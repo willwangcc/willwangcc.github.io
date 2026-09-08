@@ -52,6 +52,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
   font-variant-numeric: tabular-nums;
 }
 
+.works-intro {
+  max-width: 68ch;
+  margin: 0 0 16px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+}
+
 .works-filters {
   display: flex;
   gap: 7px;
