@@ -34,7 +34,7 @@
       documentTitle: "Works — Will Wang",
       metaDescription: "Selected works by Will Wang.",
       pageTitle: "Works",
-      intro: " — a builder exploring the interface between human thought and AI, asking: what remains constant as everything changes?",
+      intro: " — In the age of AI, one question matters: what remains constant enough to navigate everything that changes?",
       languageLabel: "Language",
       profileAria: "Open Will's profile",
       filtersAria: "Filter works by type",
