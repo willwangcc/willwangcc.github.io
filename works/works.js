@@ -70,7 +70,7 @@
       documentTitle: "作品 — Will Wang",
       metaDescription: "Will Wang 的作品。",
       pageTitle: "作品",
-      intro: " —— 一个造东西的人，探索人类思维与 AI 的界面，并追问：万物皆变，什么不变？",
+      intro: " —— 尤其是在AI大变革时代，回答一个问题：如何以不变应万变？",
       languageLabel: "语言",
       profileAria: "查看 Will 的简介",
       filtersAria: "按类型筛选作品",
