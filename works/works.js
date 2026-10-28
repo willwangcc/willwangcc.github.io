@@ -8,6 +8,7 @@
   const pageTitle = document.getElementById("page-title");
   const languageToggle = document.getElementById("language-toggle");
   const languageOptions = [...document.querySelectorAll(".language-option")];
+  const navLinks = [...document.querySelectorAll("[data-nav-label]")];
   const drawer = document.getElementById("work-drawer");
   const drawerContent = document.getElementById("drawer-content");
   const closeButton = document.getElementById("drawer-close");
@@ -34,6 +35,7 @@
       documentTitle: "Works — Will Wang",
       metaDescription: "Selected works by Will Wang.",
       pageTitle: "Works",
+      nav: { home: "Home", works: "Works", about: "About" },
       intro: " — In the age of AI, one question matters: what remains constant enough to navigate everything that changes?",
       languageLabel: "Language",
       profileAria: "Open Will's profile",
@@ -70,6 +72,7 @@
       documentTitle: "作品 — Will Wang",
       metaDescription: "Will Wang 的作品。",
       pageTitle: "作品",
+      nav: { home: "主页", works: "作品", about: "关于" },
       intro: " —— 尤其是在AI大变革时代，回答一个问题：如何以不变应万变？",
       languageLabel: "语言",
       profileAria: "查看 Will 的简介",
@@ -145,6 +148,10 @@
     document.title = t.documentTitle;
     if (metaDescription) metaDescription.setAttribute("content", t.metaDescription);
     pageTitle.textContent = t.pageTitle;
+    navLinks.forEach((link) => {
+      const label = t.nav[link.dataset.navLabel];
+      if (label) link.textContent = label;
+    });
     setIntroText(t.intro);
     languageToggle.setAttribute("aria-label", t.languageLabel);
     profileTrigger.setAttribute("aria-label", t.profileAria);
