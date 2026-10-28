@@ -435,3 +435,46 @@ text-shadow: 0 1px 0 #fff;
 
 
 
+
+/* Shared navigation — canonical paths live in _includes/site-nav.html. */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 12px;
+    margin: 30px 0 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eaeae8;
+}
+.site-header .sitename {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 650;
+    text-align: left;
+}
+.site-header .sitename a { color: #12aa7f; }
+.site-header .sitename a:hover { color: #0b8d70; }
+.site-header .site-nav { display: flex; align-items: center; gap: 22px; }
+.site-header .site-nav a {
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+.site-header .site-nav a:hover,
+.site-header .site-nav a[aria-current="page"] { color: #078b6c; }
+.site-header .site-nav a[aria-current="page"] { border-bottom-color: #12aa7f; }
+.site-header .site-nav a:focus-visible {
+    outline: 2px solid #078b6c;
+    outline-offset: 4px;
+}
+@media only screen and (max-width: 600px) {
+    .site-header { margin-top: 12px; align-items: flex-start; }
+    .site-header .sitename { font-size: 21px; }
+    .site-header .site-nav { gap: 20px; }
+}
