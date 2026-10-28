@@ -15,12 +15,10 @@
 <body onload="prettyPrint()">
 
   <div class="container">
-      <h1 class="sitename">大象植物园的客厅</h1>
-      <div class="nav">
-<a href="/">主页</a>
-<a href="/work">作品</a>
-<a href="/about">关于</a>
-</div>
+      <header class="site-header">
+        <h1 class="sitename"><a href="/">大象植物园的客厅</a></h1>
+        {% include site-nav.html %}
+      </header>
 {{ content }}
 </div>
 {% if page.url != "/" %}

@@ -401,3 +401,42 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+/* Consistent site navigation, adapted to the minimal Works visual language. */
+.works-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 12px;
+  margin-bottom: 42px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--line);
+}
+.works-brand {
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+.works-topbar .site-nav { display: flex; align-items: center; gap: 24px; }
+.works-topbar .site-nav a {
+  padding: 4px 0;
+  border-bottom: 1px solid transparent;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.works-topbar .site-nav a:hover,
+.works-topbar .site-nav a[aria-current="page"] { color: var(--ink); }
+.works-topbar .site-nav a[aria-current="page"] { border-bottom-color: var(--ink); }
+.works-topbar .site-nav a:focus-visible,
+.works-brand:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+@media (max-width: 620px) {
+  .works-topbar { margin-bottom: 30px; }
+  .works-topbar .site-nav { gap: 18px; }
+}
