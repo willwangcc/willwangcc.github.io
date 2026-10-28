@@ -1,0 +1,9 @@
+{% comment %}
+  Canonical navigation: one source of truth for blog pages and /works/.
+  Use language="en" on the standalone Works page; JavaScript can relabel it.
+{% endcomment %}
+<nav class="site-nav" aria-label="{% if include.language == 'en' %}Main navigation{% else %}主导航{% endif %}">
+  <a href="/" data-nav-label="home"{% if page.url == '/' %} aria-current="page"{% endif %}>{% if include.language == 'en' %}Home{% else %}主页{% endif %}</a>
+  <a href="/works/" data-nav-label="works"{% if page.url == '/works/' %} aria-current="page"{% endif %}>{% if include.language == 'en' %}Works{% else %}作品{% endif %}</a>
+  <a href="/about/" data-nav-label="about"{% if page.url == '/about/' %} aria-current="page"{% endif %}>{% if include.language == 'en' %}About{% else %}关于{% endif %}</a>
+</nav>
